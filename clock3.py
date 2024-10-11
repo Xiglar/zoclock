@@ -13,7 +13,7 @@ window.attributes('-fullscreen', True)
 
 custom_font = 'Helvetica Neue Condensed Bold'
 
-# Clave API de OpenWeatherMap (cámbiala por tu clave)
+# Clave API de OpenWeatherMap
 API_KEY = '3cdcc7df8e583545b9990d8d4d4ab456'
 CITY = 'Buenos Aires'  # Cambia la ciudad a la que desees consultar
 WEATHER_URL = f"http://api.openweathermap.org/data/2.5/weather?q={CITY}&appid={API_KEY}&units=metric"
@@ -44,11 +44,20 @@ def get_weather_data():
         return None, str(e), None
 
 def update_time_and_weather():
-    day, clock = strftime('%a, %d %b'), strftime('%H %M')
+
+
+    ########## PROBAR SEPARAR EN 2 RELOJES LA HORA DE LOS MINUTOS PARA PODER AJUSTAR PERFECTAMENTE LAS POSICIONES ##########
+
+
+    day, clock = strftime('%a, %d %b'), strftime('%I %M')
     
     # Si la hora empieza con 0, lo eliminamos manualmente
     if clock[0] == '0':
         clock = clock[1:]  # Remover el primer carácter si es un cero
+
+    # # Si la hora termina con 1, le agregamos un espacio
+    # if clock[0] == '0':
+    #     clock = clock[1:]  # Remover el primer carácter si es un cero
 
     label_clock.config(text=clock)
     label_day.config(text=day.upper())
@@ -90,6 +99,7 @@ canvas = tk.Canvas(window, width=1200, height=3, bg='black', highlightbackground
 label_icon = tk.Label(window, background='black')  # Aquí va el ícono del clima
 label_temperature = tk.Label(window, font=Font(family=custom_font, size=25), background='black', foreground='#A2A2A2')
 label_description = tk.Label(window, font=Font(family=custom_font, size=25), background='black', foreground='#A2A2A2')
+
 
 # Posicionar la hora en el centro
 label_clock.place(relx=0.5, rely=0.5, anchor='center')
