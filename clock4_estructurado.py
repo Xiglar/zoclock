@@ -8,7 +8,6 @@ import io
 window = tk.Tk()
 window.title("Digital Clock")
 window.configure(background='black')
-#window.geometry('1280x832')
 window.attributes('-fullscreen', True)
 
 custom_font = 'Helvetica Neue Condensed Bold'
