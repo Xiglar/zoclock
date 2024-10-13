@@ -1,6 +1,6 @@
 from setuptools import setup
 
-APP=['clock4_estructurado.py']
+APP=['zoclock.py']
 OPTIONS = {
     'argv_emulation': True,
 }
