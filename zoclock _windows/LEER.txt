@@ -1,0 +1,10 @@
+Instalación:
+Para configurar el archivo como protector de pantalla en windows,
+es necesario hacer click derecho en el archivo zoclock.scr y seleccionar
+la opción que dice "instalar", de esta forma se abrirán las opciones
+de configuración de protectores de pantalla de windows.
+
+Desinstalación:
+Para desinstalarlo simplemente hay que buscar en el explorador de
+archivos "zoclock", seleccionar abrir la ubicación del archivo y
+eliminar zoclock.scr.
