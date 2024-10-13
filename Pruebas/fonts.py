@@ -1,3 +1,12 @@
+'''
+Este es un archivo que obtuve de un foro el cual sirve para comprobar todas
+las fuentes que tkinter tiene disponibles. En mi caso, tuve que descargar una
+a parte, y para manejar el proyecto desde windows, la descargué en mi sistema.
+Ya probé este proyecto en tu macbook y se ejecutó con la fuente correcta, lo
+que quiere decir que ya viene por default en tu sistema y no hace falta descargarla.
+De todas maneras la dejo como parte de los archivos del proyecto por si acaso.
+'''
+
 from tkinter import *
 from tkinter import font
 

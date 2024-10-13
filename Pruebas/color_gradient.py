@@ -1,3 +1,10 @@
+'''
+Quice hacerle un efecto de sombreado gradual al reloj para que no tenga un color liso
+pero no estuve ni cerca debido a que tkinter no acepta imagenes con transparencias,
+entonces no podía poner algo como eso por encima, y por sí solo no es capaz de hacer
+colores con gradientes.
+'''
+
 import tkinter as tk
 from tkinter.font import Font
 from time import strftime

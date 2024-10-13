@@ -1,3 +1,10 @@
+'''
+Intenté hacer la animación de flip, pero era algo muy rebuscado y complicado que
+no quedaría bien puesto que tkinter no tiene la capacidad para hacer animaciones
+como esa, y entonces el rebote de la ficha del digito no se lograría o quedaría
+poco realista, entonces opte porque no tenga animación antes de que sea fea.
+'''
+
 import tkinter as tk
 from PIL import Image, ImageTk, ImageDraw, ImageFont
 from time import strftime
